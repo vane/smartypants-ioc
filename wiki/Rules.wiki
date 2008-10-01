@@ -33,7 +33,7 @@ injector.newRule().whenAskedFor(IService).useSingletonOf(com.company.ServiceImpl
 
 In this example, we're binding:
   * The instance "http://www.server.com/soap/service.wsdl" to any requests for a String named "wsdl".
-  * A "lazy singleton" of class com.company.ServiceImpl to any requests for an IService.
+  * A "lazy singleton" of class ServiceImpl to any requests for an IService.
 
 Lazy singletons (*useSingletonOf*) are not created until they're needed, whereas *useInstance* binds to an existing instance.
 
